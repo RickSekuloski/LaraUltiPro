@@ -1,0 +1,100 @@
+.navbar{
+
+    box-shadow: 0 10px 20px rgba($color-black,0.15);
+
+    .container-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @media(max-width:1000px){
+        background-color: $black-grey !important;
+        .container-nav{
+            flex-direction: column !important;
+        }
+        a{
+            color: $color-white !important;
+        }
+    }
+
+    &-toggler{
+        &-menu{
+            font-size: 28px;    
+            color: $color-gold !important;
+            padding-bottom: 15px;
+        }
+
+    }
+    &-brand{
+
+        padding-top: 10px;
+        font-weight: 700;
+        
+        &:hover{
+            color: $blue !important;
+        }
+    }
+
+    &-nav{
+
+
+        .nav-item{
+            padding:5px 10px;
+        }
+        .nav-link{
+            padding-top: 10px;
+
+            &:hover{
+                color: $blue !important;
+            }
+        }
+    }
+
+    &-search{
+        width: 50%;
+        @media (max-width:700px){
+            padding-top: 5px;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 100%;
+        }
+
+        &__form{
+            position: relative;
+            margin-top: 10px;
+            .form-control{
+                font-size: 20px;
+                border: none;
+                height: 60px !important;
+                -webkit-border-radius:40px;
+                -moz-border-radius:40px;
+                -ms-border-radius:40px;
+                border-radius: 40px;
+                box-shadow: 5px 10px 15px rgba($color-black,0.15);
+                padding-left: 25px;
+                padding-right: 50px;
+            }
+        }
+
+        &__button{
+            height: 60px;
+            width: 94px;
+            position: absolute;
+            top: -1%;
+            right: 2.5%;
+            background: none;
+            border: none;
+            i{
+                font-size: 22px;
+                color: $color-black;
+                transition: all .3s;
+            }
+            i:hover{
+                
+                color: $blue;
+            }
+
+        }
+    }
+}

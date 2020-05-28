@@ -1,0 +1,52 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/ramiro-mendes-CjS3QsRuxnE-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (max-width:800px){
+        height: 50vh;
+    }
+    &-overlay{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom right,
+         rgba(138,102,115,0.6),
+         rgba(255,101,101,0.4));
+
+    }
+    &-text{
+        //background-color: orangered;
+        margin-top: -60px;
+        margin-left: 120px;
+        width: 50%;
+        color: $color-white;
+        padding: 20px 40px;
+        border: 20px solid transparent;
+        -moz-border-image: -moz-linear-gradient(to right, #3acfd5 0%, #3a45ed 100%);
+        -webkit-border-image: -webkit-linear-gradient(to right, #3acfd5 0%, #3a45ed 100%);
+        border-image: linear-gradient(to right, #3acfd5 0%, #3a45ed 100%);
+        border-image-slice: 1;
+
+        
+        @media (max-width:800px){
+            width: 100%;
+            padding: 10px 20px;
+            margin-left: 0px;
+        }
+    }
+    &-heading{
+        font-size: 50px;
+        font-weight: 800;
+        background: linear-gradient(to right, #3acfd5 0%, #3a45ed 100%);
+        @media(max-width:800px){
+            font-size: 22px;
+        }
+    }
+    
+
+
+}

@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900|Roboto:300,300i,400,700,900&display=swap');
+//Font-Awesome
+@import '~font-awesome/scss/font-awesome';
+// Variables
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+//base
+@import 'base/base';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/utilities';
+
+//components
+@import 'components/nav';
+@import 'components/post-card';
+@import 'components/post-container';
+
+//layout
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+@import 'layout/login';
+@import 'layout/register';
+
+
+
+//pages
+@import 'pages/main';
+
+//themes
+
+//vendors
+

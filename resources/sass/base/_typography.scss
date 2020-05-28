@@ -1,0 +1,22 @@
+.heading__tertiary{
+    font-size: 32px;
+    padding: 10px 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-white,0.8),
+        rgba($color-white,0.2)
+    );
+
+    @media(max-width:700px){
+        font-size: 22px;
+        background-image: linear-gradient(
+            to bottom,
+            rgba($color-black,0.9),
+            rgba($grey-light,0.6)
+        );
+    }
+
+}
